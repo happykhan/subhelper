@@ -1,0 +1,4 @@
+biopython==1.79
+et-xmlfile==1.1.0
+numpy==1.21.2
+openpyxl==3.0.7

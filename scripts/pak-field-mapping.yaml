@@ -1,0 +1,6 @@
+
+covv_location: Location
+covv_collection_date: Date_of_Collection
+covv_gender: Gender
+covv_patient_age: Age
+sample_name: Sample
