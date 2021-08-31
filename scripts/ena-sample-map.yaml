@@ -1,0 +1,6 @@
+covv_virus_name: isolate
+covv_collection_date: collection_date
+covv_host: host
+covv_gender: source_sex
+covv_patient_age: source_age
+covv_patient_status: host_health_state

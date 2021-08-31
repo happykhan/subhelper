@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAMPLE_SET>
+   <SAMPLE>
+       <TITLE></TITLE>
+        <SAMPLE_NAME>
+            <TAXON_ID></TAXON_ID>
+            <SCIENTIFIC_NAME></SCIENTIFIC_NAME>
+            <COMMON_NAME></COMMON_NAME>
+        </SAMPLE_NAME>
+        <SAMPLE_ATTRIBUTES></SAMPLE_ATTRIBUTES>
+    </SAMPLE>
+</SAMPLE_SET>

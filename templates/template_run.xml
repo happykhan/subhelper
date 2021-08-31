@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RUN alias="run_mantis_religiosa" broker_name="Quadram Institute Bioscience" center_name="Quadram Institute Bioscience">
+        <EXPERIMENT_REF refname="exp_run_mantis_religiosa"/>
+        <DATA_BLOCK>
+          <FILES>
+            <FILE checksum="93c740d4946fb658a31d97db4e15cc23" checksum_method="MD5" filename="run/ERR406/ERR4065377/E6E15_S57.mapped.bam" filetype="bam"/>
+          </FILES>
+        </DATA_BLOCK>
+    </RUN>

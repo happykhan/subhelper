@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <EXPERIMENT alias="exp_mantis_religiosa" broker_name="Quadram Institute Bioscience" center_name="Quadram Institute Bioscience">
+       <TITLE>The 1KITE project: evolution of insects</TITLE>
+       <STUDY_REF accession="SRP017801"/>
+       <DESIGN>
+           <DESIGN_DESCRIPTION/>
+           <SAMPLE_DESCRIPTOR accession="SRS462875"/>
+           <LIBRARY_DESCRIPTOR>
+               <LIBRARY_NAME/>
+               <LIBRARY_STRATEGY>AMPLICON</LIBRARY_STRATEGY>
+               <LIBRARY_SOURCE>VIRAL RNA</LIBRARY_SOURCE>
+               <LIBRARY_SELECTION>PCR</LIBRARY_SELECTION>
+               <LIBRARY_LAYOUT>
+                   <PAIRED />
+               </LIBRARY_LAYOUT>
+               <LIBRARY_CONSTRUCTION_PROTOCOL>Nextera LITE</LIBRARY_CONSTRUCTION_PROTOCOL>
+           </LIBRARY_DESCRIPTOR>
+       </DESIGN>
+       <PLATFORM>
+           <ILLUMINA>
+               <INSTRUMENT_MODEL>NextSeq 500</INSTRUMENT_MODEL>
+           </ILLUMINA>
+       </PLATFORM>
+   </EXPERIMENT>

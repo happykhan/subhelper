@@ -1,6 +1,14 @@
 # subhelper
 helper scripts for submission to ena (microbial + sarscov2) and gisaid (sarscov2 only)
 
+## enahelper
+
+interactive site: https://www.ebi.ac.uk/ena/submit/sra/#home
+webin (xml) submission: https://www.ebi.ac.uk/ena/submit/webin/
+
+
+
+
 
 ## gisaidsub USAGE
 
