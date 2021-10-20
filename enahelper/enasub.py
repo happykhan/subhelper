@@ -57,16 +57,17 @@ def create_project(args, template='templates/template_project.xml'):
     root = tree.getroot()
     root.find('PROJECT').set('broker_name', config['broker'])
     root.find('PROJECT').set('center_name', config['center_name'])    
+    root.find('PROJECT').set('alias', 'enasubproj-' + project_meta['alias'])    
     root.find('PROJECT').find('TITLE').text = project_meta['title']
     root.find('PROJECT').find('DESCRIPTION').text = project_meta['description']
     with open(project_xml_path, 'wb') as out: 
         out.write(ET.tostring(root))       
 
-    # submission_dict = {
-    #         "SUBMISSION": (sub_xml, open(sub_xml_path, 'r'), 'application/x-www-form-urlencoded'),
-    #         "PROJECT": (project_xml, open(project_xml_path, 'r'), 'application/x-www-form-urlencoded')
-    #     }
-    # requests.post(server, auth=(config['user'],config['passwd']), files= submission_dict)
+    submission_dict = {
+            "SUBMISSION": (sub_xml, open(sub_xml_path, 'r'), 'application/x-www-form-urlencoded'),
+            "PROJECT": (project_xml, open(project_xml_path, 'r'), 'application/x-www-form-urlencoded')
+        }
+    requests.post(server, auth=(config['user'],config['passwd']), files= submission_dict)
 
 
 def create_samples(args, template='templates/template_sample.xml'):
@@ -120,7 +121,7 @@ def create_samples(args, template='templates/template_sample.xml'):
             "SAMPLE": (samples_xml, open(samples_xml_path, 'r'), 'application/x-www-form-urlencoded')
         }
     info = requests.post(server, auth=(config['user'],config['passwd']), files= submission_dict)             
-    print(info)
+    print(info.text)
 
 
 def submit_data(args):
@@ -141,7 +142,7 @@ def submit_data(args):
     new_acc = {} 
     for alias, x in acc.items(): 
         # hCoV-19_Lebanon_QIB-862_2021
-        if alias.startswith('hCoV-19_Lebanon'):
+        if alias.startswith('hCoV-19_Lebanon') or alias.startswith('hCoV-19_Pakistan') :
             new_acc[alias.split('_')[2]] = x 
     acc.update(new_acc)
     submit = '' 

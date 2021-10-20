@@ -88,7 +88,7 @@ class GISENAMeta(Schema):
     host = fields.Str(missing='Human')
     source_age = fields.Integer()
     host_health_state = fields.Str(missing='not provided')
-    source_sex = fields.Str(validate=validate.OneOf(['male', 'female']))
+    source_sex = fields.Str(validate=validate.OneOf(['male', 'female', 'not provided']))
     host_scientific_name = fields.Str(missing='Homo sapiens')
     collector_name = fields.Str()
     collecting_org = fields.Str( missing="Quadram Institute Bioscience")

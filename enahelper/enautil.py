@@ -22,7 +22,11 @@ def get_samples(file_loc):
 
 def format_meta(sample_list, sheet_location, global_values=None, custom_fields=None):
     all_records = [] 
-    for record in csv.DictReader(open(sheet_location), dialect=csv.excel_tab()):
+    if sheet_location.endswith('.csv'):
+        csv_records = csv.DictReader(open(sheet_location), dialect=csv.excel())
+    else:
+        csv_records = csv.DictReader(open(sheet_location), dialect=csv.excel_tab())
+    for record in csv_records:
         if custom_fields:
             for old_key, right_key in custom_fields.items():
                 if record.get(old_key):

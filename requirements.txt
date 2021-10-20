@@ -1,4 +1,11 @@
 biopython==1.79
+certifi==2021.5.30
+charset-normalizer==2.0.4
 et-xmlfile==1.1.0
+idna==3.2
+marshmallow==3.13.0
 numpy==1.21.2
-openpyxl==3.0.7
+pyaml==21.8.3
+PyYAML==5.4.1
+requests==2.26.0
+urllib3==1.26.6
