@@ -78,7 +78,7 @@ You can add in as many of the standard gisaid fields. See gisaidschema or GISAID
 
 You then run gisaidhelper:
 ```
-python gisaidsub.py 20210408-Justin_metrics.csv  all_fasta_dir --outputdir my_output  --field_mapping my_first_file.yaml --global_values something_global.yaml  
+python gisaidsub.py metadata_they_gave.csv  all_fasta_dir --outputdir my_output  --field_mapping my_first_file.yaml --global_values something_global.yaml  
 ```
 
 The script then:
