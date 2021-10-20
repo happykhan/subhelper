@@ -47,9 +47,9 @@ Licence: GPLv3 by Nabil-Fareed Alikhan <nabil@happykhan.com>
 
 The way the script works is that you first need a directory of all the fasta consensus files in one directory. 
 
-you then need an existing sheet of metadata, usually this is provided to you. 
+You then need an existing sheet of metadata, usually this is provided to you. 
 
-You then need to make two yaml files, that tell the script little config rultes on what fields map to what. 
+You then need to make two yaml files, that tell the script rules on what fields map to what. 
 First field, is the name that GISAID wants in its table, the second is what its call in your sheet. 
 e.g.
 ```
