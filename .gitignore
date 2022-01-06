@@ -4,6 +4,7 @@ temp/
 enaconfig.yaml
 pass
 enasubdir/
+.vscode 
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
