@@ -1,0 +1,9 @@
+collecting_org: Laboratory of Molecular Biology and Cancer Immunology 
+collector_name: Sima Tokajian
+insert_size: 400
+instrument: NextSeq 550
+library_strategy: AMPLICON
+library_source: VIRAL RNA
+library_selection: RANDOM
+assembly_program: IVAR (ARTIC)
+platform: ILLUMINA
