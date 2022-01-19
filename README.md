@@ -6,7 +6,23 @@ helper scripts for submission to ena (microbial + sarscov2) and gisaid (sarscov2
 interactive site: https://www.ebi.ac.uk/ena/submit/sra/#home
 webin (xml) submission: https://www.ebi.ac.uk/ena/submit/webin/
 
+ENAhelper will help you prepare your data for submission for ENA. 
+There are four steps: 
 
+
+* Create template tables using `enahelper create_templates` 
+* Fill metadata 
+* Create the study/project on ENA using `enahelper create_projects` 
+* Create the study/project on ENA using `enahelper create_sub` 
+* Create the study/project on ENA using `enahelper create_data_sub`
+
+Each supported by a seperate submodule run though enahelper.
+
+```
+enahelper create_template --datadir   home/ubuntu/data/my_reads   --global_values    enasubdir/globals.yaml 
+enahelper --submit    create_samples  enasubdir/sample_metadata.csv   --existing   enasubdir/old.mysub-sample_accessions.csv
+enahelper --submit   create_data_sub   Project_run_1    enasubdir/sample_metadata.csv  enasubdir/mysub-sample_accessions.csv 
+```
 
 
 
